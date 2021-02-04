@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Transactions\IUnitOfWork.cs" />
     <Compile Include="Migrations\202102041321140_CriandoOBanco.cs" />
     <Compile Include="Migrations\202102041321140_CriandoOBanco.designer.cs">
       <DependentUpon>202102041321140_CriandoOBanco.cs</DependentUpon>
@@ -65,8 +66,10 @@
     <Compile Include="Persistence\Map\MapJogador.cs" />
     <Compile Include="Persistence\Repositories\Base\RepositoryBase.cs" />
     <Compile Include="Persistence\Repositories\RepositoryJogador.cs" />
+    <Compile Include="Persistence\Repositories\RepositoryJogo.cs" />
     <Compile Include="Persistence\XGameContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transactions\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

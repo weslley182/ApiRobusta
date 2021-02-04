@@ -5,13 +5,12 @@ using XGame.Infra.Persistence.Repositories.Base;
 
 namespace XGame.Infra.Persistence.Repositories
 {
-    public class RepositoryJogador: RepositoryBase<Jogador, Guid>, IRepositoryJogador
+    public class RepositoryJogo : RepositoryBase<Jogo, Guid>, IRepositoryJogo
     {
         protected readonly XGameContext _context;
-        public RepositoryJogador(XGameContext context) : base(context)
+        public RepositoryJogo(XGameContext context) : base(context)
         {
             _context = context;
         }
-
     }
 }
