@@ -1,16 +1,21 @@
 ﻿using Domain.Interface.Arguments;
+using Domain.Resources;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Arguments.Jogador
 {
     public class AdicionarJogadorResponse: IResponse
     {
         public Guid Id { get; set; }
+        public string Mensagem { get; set; }
 
-        public string Message { get; set; }
+        public static explicit operator AdicionarJogadorResponse(Entities.Jogador jogador)
+        {
+            return new AdicionarJogadorResponse
+            {
+                Id = jogador.Id,
+                Mensagem = Message.X_SUCESSO
+            };
+        }
     }
 }

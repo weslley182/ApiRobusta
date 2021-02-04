@@ -32,5 +32,13 @@ namespace Domain.Entities
             
             AddNotifications(nome, email);
         }
+
+        public void AlterarJogador(Nome nome, Email email)
+        {
+            Nome = nome;
+            Email = email;
+
+            AddNotifications(Nome, Email);
+        }
     }
 }

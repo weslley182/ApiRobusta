@@ -79,11 +79,29 @@ namespace Domain.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dados de &apos;{0}&apos; não encontrado..
+        /// </summary>
+        internal static string X_NAOENCONTRADO {
+            get {
+                return ResourceManager.GetString("X_NAOENCONTRADO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {} é obrigatório..
         /// </summary>
         internal static string X_OBRIGATORIO {
             get {
                 return ResourceManager.GetString("X_OBRIGATORIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operação realizada com sucesso..
+        /// </summary>
+        internal static string X_SUCESSO {
+            get {
+                return ResourceManager.GetString("X_SUCESSO", resourceCulture);
             }
         }
     }
