@@ -10,7 +10,7 @@ namespace XGame.Infra.Persistence
         public IDbSet<Jogador> Jogadores { get; set; }
         public IDbSet<Jogo> Jogos { get; set; }
         public IDbSet<Plataforma> Plataformas { get; set; }
-        public XGameContext(): base("XGameConnectionString")
+        public XGameContext(): base("XGame")
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;
