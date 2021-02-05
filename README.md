@@ -1,2 +1,2 @@
 
-<h1>Arquiterura DDD para API</h1>
+<h1>Arquitetura DDD para API</h1>
